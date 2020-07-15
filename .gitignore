@@ -1,5 +1,4 @@
-./Python/__pycache
-./Python/.ipynb_checkpoints
-*.txt
-./Java/.vscode
-./.vscode
+*pycache*
+*ipynb*
+*.txt*
+*vscode*
