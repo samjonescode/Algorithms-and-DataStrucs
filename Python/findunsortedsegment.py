@@ -7,12 +7,7 @@ def subsort(nums):
             start = i
         elif start != -1 and nums[start] >= nums[i]:
             end = i
-    # if no end was set, either no start was found and everything is sorted
-    # or no end was found, meaning all elements from start onwards are out of order
 
-    # end = (len(nums) - 1) if end == -1 else end
-
-    #
     for k in range(len(nums[: start - 1])):
         if nums[k] in nums[start:]:
             start = k
