@@ -1,3 +1,4 @@
+// creating a doubly linked list with only a "node" class and no container "linkedlist" class.
 public class DoubleListNode {
     int data;
     DoubleListNode next;
@@ -11,7 +12,6 @@ public class DoubleListNode {
         System.out.println(head1);
         head1.insertAt(1, 200);
         head1.insertAt(10, 200);
-        // head1.printList();
         System.out.println(head1);
 
         DoubleListNode randomNode = head1.getNodeAt(3);
