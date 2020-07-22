@@ -1,3 +1,5 @@
+package Java.CrackingtheCodingInterview;
+
 public class IsBalanced {
 
     public static void main(String[] args) {
@@ -32,7 +34,7 @@ public class IsBalanced {
 
         level3RightRight.right.right = new Node(15);
 
-     System.out.println(isBalanced(root));
+        System.out.println(isBalanced(root));
     }
 
     public static boolean isBalanced(Node root) {

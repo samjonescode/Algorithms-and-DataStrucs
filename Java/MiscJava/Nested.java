@@ -1,4 +1,4 @@
-package Java;
+package Java.MiscJava;
 
 public abstract class Nested implements TwoMethods {
     class Node {

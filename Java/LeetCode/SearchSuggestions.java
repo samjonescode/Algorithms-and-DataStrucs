@@ -1,4 +1,4 @@
-package Java;
+package Java.LeetCode;
 
 import java.util.*;
 

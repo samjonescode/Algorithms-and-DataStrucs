@@ -1,4 +1,6 @@
 // creating a doubly linked list with only a "node" class and no container "linkedlist" class.
+package Java.LinkedList;
+
 public class DoubleListNode {
     int data;
     DoubleListNode next;
