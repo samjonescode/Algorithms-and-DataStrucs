@@ -1,3 +1,5 @@
+package Java.AmazonOA;
+
 import java.util.*;
 
 public class ZombieConversion {

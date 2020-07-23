@@ -23,6 +23,11 @@ public class SinglyLinkedList {
 
         sLL.print();
 
+        Nerd reversed = sLL.reverse();
+
+        System.out.println("Reversed list: ");
+        sLL.print();
+
     }
 
     void print() {
@@ -113,6 +118,23 @@ public class SinglyLinkedList {
         System.out.println("Deletion error: No such nerd found.");
 
     }
+
+    Nerd reverse() {
+        Nerd pointer1 = null;
+        Nerd pointer2 = head;
+
+        while (pointer2 != null) {
+
+            Nerd temp = pointer2.next;
+            pointer2.next = pointer1;
+            pointer1 = pointer2;
+            pointer2 = temp;
+        }
+
+        head = pointer1;
+        return pointer1;
+    }
+
 }
 
 class Nerd {
