@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Organization</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center;">Life Organization</h1>
+      <button class="btn btn-warning" onClick="hideLists()">Toggle</button>
+      <button class="btn btn-danger" onClick="alert('red')">Toggle</button>
+      <button class="btn btn-success">Toggle</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-disabled">Disabled</button>
+
+      <ul class="list1" style="background-color: turquoise;">
+        <h4>Side income / passive income</h4>
+
+        <li>FBA - Fulfilled by Amazon sales</li>
+
+        <li>FB Ads</li>
+        <li>YouTube Tutorials</li>
+      </ul>
+
+      <ul class="list" style="background-color: aqua;">
+        <h4>Mainstays / Career</h4>
+        <li>Developing technical skills</li>
+        <li>Data structures and algorithms</li>
+        <li>Flutter Tutorial (the firestore one in the book)</li>
+      </ul>
+    </div>
+    <script>
+      let lists = document.querySelector(".list1");
+      let btnTxt = document.querySelector(".btn-warning");
+      function hideLists() {
+        let value = lists.getAttribute("hidden");
+        let newValue = value == "true" ? "false" : "true";
+        console.log(newValue);
+        console.log(lists);
+        lists.setAttribute("hidden", newValue);
+        // btnTxt.setAttribute("value", "Changed");
+        btnTxt.innerText = "hi";
+        document.innerHTML = "<h1> HI </h1>";
+      }
+    </script>
+  </body>
+</html>
